@@ -1,0 +1,6 @@
+.hajj-programs{
+    min-height: 80vh;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
