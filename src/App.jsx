@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router , Route , Routes } from 'react-router-dom';
-import { Home } from './assets/Pages/Home'
+import { Home , UmrahPrograms , Hotel} from './assets/Pages'
 import { Header , Footer} from './assets/Sections';
 
 function App() {
@@ -14,7 +14,9 @@ function App() {
          <Header/>
              <Routes>
                 <Route path='/' element={<Home/>}/>           
-             </Routes>
+                <Route path='/Programs/:id' element={<UmrahPrograms/> }/>   
+                <Route path='Hotel/:id' element={<Hotel/>} />            
+            </Routes>
           <Footer/>
        </Router> 
     </>
